@@ -1,6 +1,18 @@
 {
  "adrian":{
-          "services":["develop","new product","design"]
+          "services":{
+                      "0":{
+                           "name":"Develop",
+                           "price":"1000"
+          }
+                      "1":{
+                          "name":"Design",
+                          "price":"400"
+          }
+                      "2":{
+                          "name":"Task",
+                          "price":"300"
+ }
           }
 
 }
