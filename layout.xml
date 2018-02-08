@@ -1,9 +1,11 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
 <page name="github" type="content" onload="event:location" skin="theme:github" > 
    <header name="github" type="line" size="full" >
    <header>
    <content name="github" type="dashboard" size="full">
         <each in="GET name FROM adrian:services" as="name">
-               <text name="github">node:name</text>
+               <text name="github" >node:name</text>
         </each>   
    </content>
    <footer name="github" type="line" size="full">
