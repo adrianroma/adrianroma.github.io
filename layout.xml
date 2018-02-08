@@ -1,11 +1,11 @@
-<page:github type="content" onload="event:location" skin="theme:github" > 
-   <header:github type="line" size="full" >
-   <header:github>
-   <content:github type="dashboard" size="full">
+<page name="github" type="content" onload="event:location" skin="theme:github" > 
+   <header name="github" type="line" size="full" >
+   <header>
+   <content name="github" type="dashboard" size="full">
    
    
-   </content:github>
-   <footer:github type="line" size="full">
+   </content>
+   <footer name="github" type="line" size="full">
    
-   <footer:github>
-<page:github>   
+   <footer>
+<page>   
