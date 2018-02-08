@@ -14,7 +14,7 @@
             var doc = x.responseText;
             parser = new DOMParser();
             xmlDoc = parser.parseFromString(doc,"text/xml");
-             repeat = xmlDoc.getElementsByTagName("text");
+             repeat = xmlDoc.getElementsByTagName("each");
              console.log(repeat);
             }
           };
