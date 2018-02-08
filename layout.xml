@@ -1,5 +1,3 @@
-
-<?xml version="1.0" encoding="UTF-8"?>
 <page name="github" type="content" onload="event:location" skin="theme:github" > 
    <header name="github" type="line" size="full" >
    <header>
