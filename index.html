@@ -1,49 +1,105 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>adrian roma</title>
-    
-    <link rel="stylesheet" type="text/css" href="/class.css">
-    <script  type="text/javascript">
-          function LoadLayout(){
-           var x = new XMLHttpRequest();
-           x.open("GET", "https://raw.githubusercontent.com/adrianroma/adrianroma.github.io/master/layout.xml", true);
-          x.onreadystatechange = function () {
-           if (x.readyState == 4 && x.status == 200)
-           {
-            var doc = x.responseText;
-            parser = new DOMParser();
-            xmlDoc = parser.parseFromString(doc,"text/xml");
-             repeat = xmlDoc.getElementsByTagName("each");
-             console.log(repeat);
-            }
-          };
-           x.send(null);
-           }
-           
-    </script>
-  </head>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#ffffff">
+  <meta name="description" content="Explore AI agent projects and automation services by Adrian Romero Vargas, an electronics and telecommunications engineer.">
+  <title>Adrian Romero Vargas | Agent Projects</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/catalog.css">
+</head>
+<body>
+  <header class="catalog-header">
+    <a class="brand" href="#top" aria-label="Adrian Romero Vargas, home">
+      <span class="brand-mark" aria-hidden="true">AR</span>
+      <span>Adrian Romero Vargas</span>
+    </a>
+    <nav class="header-nav" aria-label="Main navigation">
+      <a href="#nodejs">Agents</a>
+      <a href="#about">About</a>
+      <a class="profile-link" href="https://github.com/adrianroma/adrianroma.github.io" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
+    </nav>
+  </header>
 
+  <main class="catalog" id="top">
+    <section class="intro" aria-labelledby="page-title">
+      <p class="eyebrow">ENGINEERING / AUTOMATION / AI</p>
+      <h1 id="page-title">AI agents, built for real workflows.</h1>
+      <div class="intro-bottom">
+        <p>I connect software, hardware, and practical AI to make everyday work simpler, from phone automation to document search and customer conversations.</p>
+        <div class="experience-note"><span>BUILDING SINCE 2018</span><span>Electronics & telecommunications</span></div>
+      </div>
+    </section>
 
-  <body onload="LoadLayout();">
-  
+    <nav class="platform-nav" aria-label="Browse agents by platform">
+      <span class="browse-label">BROWSE BY PLATFORM</span>
+      <a href="#nodejs">Node.js <span>03</span></a>
+      <a href="#python">Python <span>03</span></a>
+    </nav>
 
+    <section class="platform-section" id="nodejs" aria-labelledby="agents-title">
+      <div class="section-heading">
+        <div><span class="section-kicker">01 / PLATFORM</span><h2 id="agents-title">Node.js agents</h2></div>
+        <p>Communication and information tools designed to connect with the systems people already use.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-item">
+          <div class="project-heading"><h3>Caller</h3><span>VOICE AUTOMATION</span></div>
+          <img src="assets/background/Caller.png" alt="Calling agent in a connected communications room" loading="lazy">
+          <p>A voice agent that connects to a phone trunk to handle calls and support phone-based workflows.</p>
+        </article>
+        <article class="project-item">
+          <div class="project-heading"><h3>Classification</h3><span>INSTRUCTION ROUTING</span></div>
+          <img src="assets/background/Classification.png" alt="Agent reviewing and classifying documents" loading="lazy">
+          <p>An agent that interprets instructions, identifies intent, and routes each request to the right next step.</p>
+        </article>
+        <article class="project-item">
+          <div class="project-heading"><h3>File Search</h3><span>KNOWLEDGE SEARCH</span></div>
+          <img src="assets/background/FileSearch.png" alt="Agent searching through digital and paper files" loading="lazy">
+          <p>A file-aware assistant that compares documents and finds relevant information across your materials.</p>
+        </article>
+      </div>
+    </section>
 
+    <section class="platform-section" id="python" aria-labelledby="python-title">
+      <div class="section-heading">
+        <div><span class="section-kicker">02 / PLATFORM</span><h2 id="python-title">Python agents</h2></div>
+        <p>Guided assistants for creation, marketing, and customer sales conversations.</p>
+      </div>
+      <div class="project-grid">
+        <article class="project-item">
+          <div class="project-heading"><h3>Creation</h3><span>GUIDED CREATION</span></div>
+          <img src="assets/background/Creation.png" alt="Agent developing an idea with a glowing light bulb" loading="lazy">
+          <p>A guided creation flow that turns a mission or brief into a structured starting point for an agent.</p>
+        </article>
+        <article class="project-item">
+          <div class="project-heading"><h3>Marketing</h3><span>CAMPAIGN CONTENT</span></div>
+          <img src="assets/background/Marketing.png" alt="Marketing agent among city storefronts" loading="lazy">
+          <p>An assistant that drafts marketing copy and ad concepts for a defined audience, offer, and campaign.</p>
+        </article>
+        <article class="project-item">
+          <div class="project-heading"><h3>Sales</h3><span>WHATSAPP SALES</span></div>
+          <img src="assets/background/Sales.png" alt="Sales assistant organizing inventory in a warehouse" loading="lazy">
+          <p>A WhatsApp sales assistant designed to answer customer questions and help move conversations toward a sale.</p>
+        </article>
+      </div>
+    </section>
 
-<div id="root"></div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.4.2/react-dom.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-standalone/6.21.1/babel.min.js"></script>
-<script type="text/babel">
-class Greeting extends React.Component {
-    render() {
-        return (<p>BEAT YOUR DREAMS</p>);
-    }
-}
-ReactDOM.render(
-    <Greeting />,
-    document.getElementById('root')
-);
-</script>
+    <section class="about-section" id="about" aria-labelledby="about-title">
+      <div><span class="section-kicker">03 / BACKGROUND</span><h2 id="about-title">Engineering that connects the dots.</h2></div>
+      <div class="about-copy">
+        <p class="about-lede">I’m Adrian Romero Vargas, an electronics and telecommunications engineer focused on connecting clients, servers, software, and hardware.</p>
+        <p>My automation work began around 2018 with early chatbots built from dictionaries, dialogue patterns, sales scripts, and regular expressions. Since then, I’ve expanded into robotic process automation (RPA), prompt engineering, and AI agents shaped by clear instructions, structured patterns, and measurable logic.</p>
+        <div class="skill-list" aria-label="Areas of experience"><span>Connected systems</span><span>RPA</span><span>Prompt engineering</span><span>AI agents</span></div>
+      </div>
+    </section>
+  </main>
 
+  <footer class="catalog-footer"><a class="brand" href="#top"><span class="brand-mark" aria-hidden="true">AR</span><span>Adrian Romero Vargas</span></a><span>AI agents & connected systems</span><span>© <span id="year">2026</span></span></footer>
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
 </body>
